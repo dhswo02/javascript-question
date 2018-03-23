@@ -9,8 +9,8 @@ var initial = 2;
 var result = [];
 var primeFactor = function(num) {
 	while (initial < num) {
-		if (num%initial === 0 ) {
-			if (result[result.length - 1] !== initial) result.push(initial)
+		if (num%initial === 0) {
+			result.push(initial);
 		}
 		initial++;
 	}
