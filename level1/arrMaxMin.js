@@ -1,28 +1,24 @@
-var array = [1, 10, 5, 11, 2];
-var result = 0;
-
 var maxFn = function(arr) {
-	for (var i = 0; i < arr.length-1; i++) {
+	var array = arr instanceof Array ? arr : arguments;
+	var result = array[0];
+	for (var i = 0; i < array.length; i++) {
+		if(result < array[i]) {
+			result = array[i];
+		}
 	}
+	return result;
 };
 
 var minFn = function(arr) {
-	for (var i = 0; i < arr.length; i++) {
+	var array = arr instanceof Array ? arr : arguments;
+	var result = array[0];
+	for (var i = 0; i < array.length; i++) {
+		if(result > array[i]) {
+			result = array[i];
+		}
 	}
+	return result;
 };
 
-//최대값
-var max = array.reduce( function (previous, current) {
-	return previous > current ? previous:current;
-});
-
-//최소값
-var min = array.reduce( function (previous, current) {
-	return previous > current ? current:previous;
-});
-
-// console.log(max);
-// console.log(min);
-
-maxFn(array);
-console.log(result);
+console.log(maxFn(1,4,6,9,7));
+console.log(minFn(1,4,6,9,7));
