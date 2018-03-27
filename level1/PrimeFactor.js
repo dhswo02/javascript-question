@@ -4,16 +4,3 @@
 
 600851475143의 소인수 중에서 가장 큰 수를 구하세요.
 */
-
-var initial = 2;
-var result = [];
-var primeFactor = function(num) {
-	while (initial < num) {
-		if (num%initial === 0) {
-			result.push(initial);
-		}
-		initial++;
-	}
-};
-primeFactor(60);
-console.log(result);

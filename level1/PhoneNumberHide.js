@@ -18,7 +18,7 @@ var hideNumbers = function(str) {
 console.log(hideNumbers('01071011304'));
 
 /*
-stringObj.repeat(count);  // stringObj : 필수 요소. String 객체 / count : 필수 요소. 반환된 문자열에서 원래 문자열을 반복할 횟수
+stringObj.repeat(count);  // stringObj : 필수 요소. String 객체, count : 필수 요소. 반환된 문자열에서 원래 문자열을 반복할 횟수
 
 string.split(separator, limit); // 문자열을 분할할 때 사용하는 속성. 기준을 통해서 limit로 최대 분할 개수를 정한다. 값을 정하지 않으면 전체를 다 분할한다.
 
