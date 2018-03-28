@@ -23,6 +23,9 @@ var printReversedTriangle = function(num) {
 		result += Array(num + 1).join('*') + '\n';
 		num--
 	}
+
+	// return n > 0 ? '*'.repeat(n) + '\n' + printReversedTriangle(n-1) : '';
+
 	return result;
 };
 
